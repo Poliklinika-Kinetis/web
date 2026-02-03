@@ -29,7 +29,7 @@ export default function ServicesAreas() {
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <h4 className={styles.serviceTitle}>{service.title}</h4>
               <p className={styles.serviceDescription}>{service.description}</p>
             </div>
           ))}

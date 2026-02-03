@@ -37,9 +37,6 @@
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
-  background-color: var(--color-secondary);
   border-radius: 50%;
   display: flex;
   align-items: center;
