@@ -63,99 +63,113 @@ body {
   background: var(--color-white);
   color: var(--color-text-dark);
   font-family: var(--font-source-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.06rem; /* 18px */
+  font-weight: 300;
+  line-height: 175%;
   transition: background 0.2s ease, color 0.2s ease;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
+  font-family: var(--font-playfair), serif;
+  font-size: 3.53rem; /* 60px */
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 2rem;
+  color: #405144;
 }
 
 @media (--mobile-tablet) {
   h1 {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (--mobile) {
   h1 {
-    font-size: 2.8rem;
-    margin-bottom: 2.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 2.8rem;
+  font-family: var(--font-playfair), serif;
+  font-size: 2.82rem; /* 48px */
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+  color: #405144;
 }
 
 @media (--mobile-tablet) {
   h2 {
-    font-size: 2.8rem;
-    margin-bottom: 2.4rem;
+    font-size: 2.35rem;
+    margin-bottom: 1.2rem;
   }
 }
 
 @media (--mobile) {
   h2 {
     font-size: 2rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1rem;
   }
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 2.4rem;
+  font-family: var(--font-playfair), serif;
+  font-size: 2.12rem; /* 36px */
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 1.2rem;
+  color: #405144;
 }
 
 @media (--mobile-tablet) {
   h3 {
-    font-size: 1.9rem;
-    margin-bottom: 2rem;
+    font-size: 1.76rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media (--mobile) {
   h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  font-family: var(--font-playfair), serif;
+  font-size: 1.41rem; /* 24px */
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 1rem;
+  color: #405144;
 }
 
 @media (--mobile-tablet) {
   h4 {
-    margin-bottom: 1.8rem;
+    font-size: 1.29rem;
+    margin-bottom: 0.8rem;
   }
 }
 
 @media (--mobile) {
   h4 {
-    font-size: 1.4rem;
-    margin-bottom: 1.8rem;
+    font-size: 1.18rem;
+    margin-bottom: 0.8rem;
   }
 }
 
 h5 {
-  font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 1;
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 1.41rem; /* 24px */
+  font-weight: 300;
+  line-height: 150%;
   margin-bottom: 1rem;
+  color: #405144;
 }
 
 a {

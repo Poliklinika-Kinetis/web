@@ -50,24 +50,17 @@
 }
 
 .heroHeading {
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1.2;
   margin-bottom: 48px;
-  color: var(--color-text-dark);
-  font-family: Georgia, 'Times New Roman', serif;
 }
 
 @media (--mobile-tablet) {
   .heroHeading {
-    font-size: 2.8rem;
     margin-bottom: 36px;
   }
 }
 
 @media (--mobile) {
   .heroHeading {
-    font-size: 2rem;
     margin-bottom: 32px;
   }
 }

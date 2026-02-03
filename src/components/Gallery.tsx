@@ -107,8 +107,8 @@ export default function Gallery({ images }: GalleryProps) {
     (sliderRef as unknown as SliderRef).slickPrev();
   };
 
-  const registerSliderRef = (slider: SliderRef) => {
-    sliderRef = slider;
+  const registerSliderRef = (slider: Slider | null) => {
+    sliderRef = slider as SliderRef | null;
   };
 
   const sliderSettings = {
