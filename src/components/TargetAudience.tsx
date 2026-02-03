@@ -1,4 +1,5 @@
 import Section from "@/components/Section";
+import { assetPath } from "@/lib/assetPath";
 import styles from "./TargetAudience.module.css";
 
 export default function TargetAudience() {
@@ -8,7 +9,10 @@ export default function TargetAudience() {
         <h2 className={styles.mainHeading}>Kome je namijenjen Kinetis?</h2>
 
         <div className={styles.contentGrid}>
-          <div className={styles.targetImage}>
+          <div
+            className={styles.targetImage}
+            style={{ backgroundImage: `url(${assetPath("/assets/who-are-customers.jpg")})` }}
+          >
             {/* Target audience image */}
           </div>
 

@@ -1,11 +1,15 @@
 import Section from "@/components/Section";
+import { assetPath } from "@/lib/assetPath";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <Section>
       <div className={styles.heroContainer}>
-        <div className={styles.heroImage}>
+        <div
+          className={styles.heroImage}
+          style={{ backgroundImage: `url(${assetPath("/assets/hero.jpg")})` }}
+        >
           {/* Placeholder for hero image */}
         </div>
 

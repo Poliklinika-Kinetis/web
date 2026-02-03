@@ -1,7 +1,7 @@
 @import "../core/custom-media.css";
 
 .footer {
-  background-color: #405144;
+  background-color: var(--color-primary);
   width: 100%;
   padding: 80px 48px;
   margin-top: 80px;
@@ -22,7 +22,7 @@
 }
 
 .footerContent {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 .logo {
   width: 64px;
   height: 64px;
-  background-color: #BEAF89;
+  background-color: var(--color-secondary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -78,7 +78,7 @@
 .info p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: var(--color-white);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   margin: 0;
 }

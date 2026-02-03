@@ -1,11 +1,15 @@
 import Section from "@/components/Section";
+import { assetPath } from "@/lib/assetPath";
 import styles from "./AboutTherapist.module.css";
 
 export default function AboutTherapist() {
   return (
     <Section>
       <div className={styles.aboutContainer}>
-        <div className={styles.aboutImage}>
+        <div
+          className={styles.aboutImage}
+          style={{ backgroundImage: `url(${assetPath("/assets/about-therapist.jpg")})` }}
+        >
           {/* Therapist image */}
         </div>
 

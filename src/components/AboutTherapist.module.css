@@ -26,8 +26,7 @@
 .aboutImage {
   width: 100%;
   aspect-ratio: 590 / 650;
-  background-color: #e5e5e5;
-  background-image: url("/assets/about-therapist.jpg");
+  background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +68,7 @@
 .aboutText p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   margin: 0;
 }
 

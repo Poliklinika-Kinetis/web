@@ -15,10 +15,8 @@
 
 .heroImage {
   width: 100%;
-  max-width: 1200px;
   aspect-ratio: 2150 / 1514;
-  background-color: #e5e5e5;
-  background-image: url("/assets/hero.jpg");
+  background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +72,7 @@
 .heroText p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   margin: 0;
 }
 

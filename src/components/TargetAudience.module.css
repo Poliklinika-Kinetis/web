@@ -56,8 +56,7 @@
 .targetImage {
   width: 100%;
   aspect-ratio: 590 / 630;
-  background-color: #e5e5e5;
-  background-image: url("/assets/who-are-customers.jpg");
+  background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +107,7 @@
 .targetList li {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   padding-left: 24px;
   position: relative;
@@ -118,7 +117,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #BEAF89;
+  color: var(--color-secondary);
   font-size: 1.2rem;
 }
 

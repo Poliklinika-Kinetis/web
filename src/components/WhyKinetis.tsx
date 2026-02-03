@@ -37,7 +37,7 @@ export default function WhyKinetis() {
         <div className={styles.featuresGrid}>
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
-              <h3 className={styles.featureTitle}>{feature.title}</h3>
+              <h4 className={styles.featureTitle}>{feature.title}</h4>
               <p className={styles.featureDescription}>{feature.description}</p>
             </div>
           ))}

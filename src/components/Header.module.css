@@ -1,40 +1,38 @@
 @import "../core/custom-media.css";
 
 .header {
-  display: flex;
-  align-items: center;
-  padding: 24px 48px;
-  justify-content: space-between;
   z-index: 100;
-  background: var(--color-green-dark);
-  transition: background 0.2s ease, padding 0.3s ease;
-  height: 96px;
+  background: var(--color-primary);
+  transition: background 0.2s ease;
+  width: 100%;
+  padding: 24px 48px;
+}
+
+@media (--mobile-tablet) {
+  .header {
+    padding: 24px 32px;
+  }
 }
 
 @media (--mobile) {
   .header {
-    padding: 16px 0;
+    padding: 16px 24px;
   }
+}
+
+.headerContent {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
 }
 
 .logoContainer {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 48px;
-}
-
-@media (--mobile-tablet) {
-  .logoContainer {
-    padding-left: 32px;
-  }
-}
-
-@media (--mobile) {
-  .logoContainer {
-    padding-left: 24px;
-  }
 }
 
 .logo {
@@ -59,19 +57,11 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  padding-right: 48px;
-}
-
-@media (--mobile-tablet) {
-  .socialButtons {
-    padding-right: 32px;
-  }
 }
 
 @media (--mobile) {
   .socialButtons {
     gap: 16px;
-    padding-right: 24px;
   }
 }
 
@@ -81,7 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-beige);
+  color: var(--color-secondary);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 

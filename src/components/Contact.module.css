@@ -59,8 +59,7 @@
 .contactImage {
   width: 100%;
   aspect-ratio: 580 / 590;
-  background-color: #e5e5e5;
-  background-image: url("/assets/contact.jpg");
+  background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +117,7 @@
 .info p {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   margin: 0;
 }
@@ -141,7 +140,7 @@
 .contactList li {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   padding-left: 20px;
   position: relative;
@@ -151,7 +150,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-size: 1rem;
 }
 
@@ -164,7 +163,7 @@
 .note {
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   margin: 8px 0 0 0;
 }
@@ -182,5 +181,5 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #D4D4D4;
+  background-color: var(--color-accent);
 }

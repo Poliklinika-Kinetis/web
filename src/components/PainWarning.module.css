@@ -24,7 +24,7 @@
 .divider {
   width: 100%;
   height: 1px;
-  background-color: #D4D4D4;
+  background-color: var(--color-accent);
 }
 
 .content {
@@ -57,7 +57,7 @@
 .text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   margin: 0;
   max-width: 800px;

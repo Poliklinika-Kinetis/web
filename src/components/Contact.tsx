@@ -1,4 +1,5 @@
 import Section from "@/components/Section";
+import { assetPath } from "@/lib/assetPath";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
@@ -8,7 +9,10 @@ export default function Contact() {
         <h2 className={styles.mainHeading}>Kontakt</h2>
 
         <div className={styles.contentGrid}>
-          <div className={styles.contactImage}>
+          <div
+            className={styles.contactImage}
+            style={{ backgroundImage: `url(${assetPath("/assets/contact.jpg")})` }}
+          >
             {/* Contact image */}
           </div>
 

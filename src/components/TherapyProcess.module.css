@@ -26,8 +26,7 @@
 .therapyImage {
   width: 100%;
   aspect-ratio: 565 / 605;
-  background-color: #e5e5e5;
-  background-image: url("/assets/therapy-process.jpg");
+  background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +93,7 @@
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1;
-  color: #BEAF89;
+  color: var(--color-secondary);
   font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
   flex-shrink: 0;
   margin-top: -4px;
@@ -120,7 +119,7 @@
 .stepDescription {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--color-text-dark);
+  color: var(--color-primary);
   margin: 0;
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
 }
