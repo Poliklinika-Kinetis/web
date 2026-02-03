@@ -1,4 +1,5 @@
 import Section from "@/components/Section";
+import { assetPath } from "@/lib/assetPath";
 import styles from "./CallToAction.module.css";
 
 export default function CallToAction() {
@@ -12,8 +13,8 @@ export default function CallToAction() {
             Bez uljepšavanja stanja.
           </h2>
 
-          <a href="#contact" className={styles.ctaButton}>
-            KONTAKTIRAJ NAS
+          <a href={assetPath('/assets/kinetis-cjenik.pdf')} className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
+            POGLEDAJ NAŠ CJENIK
           </a>
         </div>
       </div>
