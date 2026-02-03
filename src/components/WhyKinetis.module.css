@@ -50,12 +50,13 @@
   background: var(--color-accent);
   padding: 48px 72px;
   border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .featureCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 @media (--mobile-tablet) {
