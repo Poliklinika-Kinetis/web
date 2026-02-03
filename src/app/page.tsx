@@ -8,6 +8,7 @@ import Services from "@/components/Services";
 import ServicesAreas from "@/components/ServicesAreas";
 import TargetAudience from "@/components/TargetAudience";
 import CommonMyths from "@/components/CommonMyths";
+import Gallery, { galleryImages } from "@/components/Gallery";
 import PainWarning from "@/components/PainWarning";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ export default function Home() {
         <Services />
         <TargetAudience />
         <CommonMyths />
+        <Gallery images={galleryImages} />
         <PainWarning />
         <Contact />
       </main>

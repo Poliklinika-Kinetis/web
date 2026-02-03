@@ -13,13 +13,13 @@ export default function AboutTherapist() {
           <h2 className={styles.aboutHeading}>O terapeutu</h2>
 
           <div className={styles.aboutText}>
-            <p>Moje ime je Stjepan Marinčević i magistar sam fizioterapije s više od 10 godina iskustva u radu s mišićno-koštanim sustavom.</p>
+            <p>Stjepan Marinčević magistar je fizioterapije s više od 10 godina iskustva u radu s mišićno-koštanim sustavom. </p>
 
-            <p>Najčešće radim s ortopedskim, vertebrološkim i traumatološkim pacijentima - uključujući pre i postooperativna stanja te akutne i kronične bolove i probleme kralježnice.</p>
+            <p>U svakodnevnoj praksi najčešće se susreće s ortopedskim, vertebrološkim i traumatološkim pacijentima, uključujući preoperativna i postooperativna stanja te akutne i kronične bolove i probleme kralježnice. </p>
 
-            <p>Dodatno sam educiran u manualnoj terapiji (Maitland koncept), DNS metodama, neurodinamičkim pristupima i individualnoj kineziterapiji.</p>
+            <p>Dodatno se educirao u području manualne terapije prema Maitland konceptu, DNS metodama, neurodinamici, neurologiji i individualnoj kineziterapiji, što mu omogućuje cjelovit i precizno prilagođen pristup svakom pacijentu. </p>
 
-            <p>Aktivno surađujem s ortopedima, traumatolozima, neurokirurzima i fizijatarima i javnih i privatnih ustanova u Zagrebu, poput primjerice Internacionalnim Medicinskim Centrom (IMC) Priora.</p>
+            <p>U svom radu njeguje timsku suradnju te aktivno surađuje s ortopedima, traumatolozima, neurokirurzima i fizijatrima iz javnih i privatnih ustanova u Zagrebu, uključujući i Internacionalni Medicinski Centar (IMC) Priora - s ciljem postizanja najboljih mogućih terapijskih rezultata. </p>
           </div>
         </div>
       </div>
