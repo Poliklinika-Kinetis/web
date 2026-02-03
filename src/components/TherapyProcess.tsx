@@ -8,7 +8,7 @@ export default function TherapyProcess() {
       <div className={styles.therapyContainer}>
         <div
           className={styles.therapyImage}
-          style={{ backgroundImage: `url(${assetPath("/assets/therapy-process.jpg")})` }}
+          style={{ backgroundImage: `url(${assetPath("/images/therapy-process.jpg")})` }}
         >
           {/* Therapy image */}
         </div>

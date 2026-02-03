@@ -15,7 +15,7 @@ export default function Header() {
         <div className={styles.logoContainer}>
           <div className={styles.logo}>
             <img
-              src={assetPath("/assets/logo.svg")}
+              src={assetPath("/images/logo.svg")}
               alt="Kinetis Logo"
               className={styles.logoImage}
             />

@@ -11,7 +11,7 @@ export default function Contact() {
         <div className={styles.contentGrid}>
           <div
             className={styles.contactImage}
-            style={{ backgroundImage: `url(${assetPath("/assets/contact.jpg")})` }}
+            style={{ backgroundImage: `url(${assetPath("/images/contact.jpg")})` }}
           >
             {/* Contact image */}
           </div>

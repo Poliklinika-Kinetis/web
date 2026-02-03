@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logo}>
           <img
-            src={assetPath("/assets/logo.svg")}
+            src={assetPath("/images/logo.svg")}
             alt="Kinetis Logo"
             className={styles.logoImage}
           />

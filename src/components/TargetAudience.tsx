@@ -11,7 +11,7 @@ export default function TargetAudience() {
         <div className={styles.contentGrid}>
           <div
             className={styles.targetImage}
-            style={{ backgroundImage: `url(${assetPath("/assets/who-are-customers.jpg")})` }}
+            style={{ backgroundImage: `url(${assetPath("/images/who-are-customers.jpg")})` }}
           >
             {/* Target audience image */}
           </div>

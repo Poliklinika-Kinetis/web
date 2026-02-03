@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={styles.heroContainer}>
         <div
           className={styles.heroImage}
-          style={{ backgroundImage: `url(${assetPath("/assets/hero.jpg")})` }}
+          style={{ backgroundImage: `url(${assetPath("/images/hero.jpg")})` }}
         >
           {/* Placeholder for hero image */}
         </div>

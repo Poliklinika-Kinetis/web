@@ -7,7 +7,7 @@ export default function CallToAction() {
     <Section>
       <div
         className={styles.ctaContainer}
-        style={{ backgroundImage: `url(${assetPath("/assets/call-to-action.png")})` }}
+        style={{ backgroundImage: `url(${assetPath("/images/call-to-action.png")})` }}
       >
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaHeading}>
@@ -16,7 +16,7 @@ export default function CallToAction() {
             Bez uljepšavanja stanja.
           </h2>
 
-          <a href={assetPath('/assets/kinetis-cjenik.pdf')} className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
+          <a href={assetPath('/kinetis-cjenik.pdf')} className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
             POGLEDAJ NAŠ CJENIK
           </a>
         </div>

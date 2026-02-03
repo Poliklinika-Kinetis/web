@@ -8,7 +8,7 @@ export default function AboutTherapist() {
       <div className={styles.aboutContainer}>
         <div
           className={styles.aboutImage}
-          style={{ backgroundImage: `url(${assetPath("/assets/about-therapist.jpg")})` }}
+          style={{ backgroundImage: `url(${assetPath("/images/about-therapist.jpg")})` }}
         >
           {/* Therapist image */}
         </div>
