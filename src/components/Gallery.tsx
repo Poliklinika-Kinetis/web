@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { useState, useEffect } from "react";
 import styles from "./Gallery.module.css";
 import { useIsMobile } from "../hooks/use-media-query";
+import { assetPath } from "@/lib/assetPath";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -246,7 +247,7 @@ const galleryImages: GalleryImage[] = [
   "suvremena terapijska oprema omogućuje cjelovit i individualno prilagođen rehabilitacijski pristup.jpg",
   "terapijske vježbe s elastičnom trakom vode se pod stručnim nadzorom terapeuta.jpg",
 ].map(filename => ({
-  src: `/gallery/${filename}`,
+  src: assetPath(`/gallery/${filename}`),
   caption: processCaption(filename),
 }));
 

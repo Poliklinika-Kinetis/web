@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.logo}>
           <img
-            src="/assets/logo.svg"
+            src={assetPath("/assets/logo.svg")}
             alt="Kinetis Logo"
             className={styles.logoImage}
           />

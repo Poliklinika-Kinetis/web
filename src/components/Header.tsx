@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./Header.module.css";
+import { assetPath } from "@/lib/assetPath";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <img
-            src="/assets/logo.svg"
+            src={assetPath("/assets/logo.svg")}
             alt="Kinetis Logo"
             className={styles.logoImage}
           />
