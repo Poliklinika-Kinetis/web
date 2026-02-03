@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="hr" className={`${sourceSans.variable} ${playfair.variable}`}>
       <head>
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className="antialiased">
