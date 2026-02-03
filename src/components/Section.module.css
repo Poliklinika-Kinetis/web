@@ -1,0 +1,20 @@
+@import "../core/custom-media.css";
+
+.section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 48px;
+}
+
+@media (--mobile-tablet) {
+  .section {
+    padding: 0 32px;
+  }
+}
+
+@media (--mobile) {
+  .section {
+    padding: 0 24px;
+  }
+}

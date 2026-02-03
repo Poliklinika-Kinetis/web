@@ -1,0 +1,90 @@
+@import "../core/custom-media.css";
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 24px 48px;
+  justify-content: space-between;
+  z-index: 100;
+  background: var(--color-green-dark);
+  transition: background 0.2s ease, padding 0.3s ease;
+}
+
+@media (--mobile) {
+  .header {
+    padding: 16px 0;
+  }
+}
+
+.logoContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 48px;
+}
+
+@media (--mobile-tablet) {
+  .logoContainer {
+    padding-left: 32px;
+  }
+}
+
+@media (--mobile) {
+  .logoContainer {
+    padding-left: 24px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+@media (--mobile) {
+  .logoImage {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.socialButtons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-right: 48px;
+}
+
+@media (--mobile-tablet) {
+  .socialButtons {
+    padding-right: 32px;
+  }
+}
+
+@media (--mobile) {
+  .socialButtons {
+    gap: 16px;
+    padding-right: 24px;
+  }
+}
+
+.socialButton {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-beige);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

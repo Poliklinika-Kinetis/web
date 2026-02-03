@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Write",
+      "Edit",
+      "WebFetch:*",
+      "Bash:*",
+      "Npm:*"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "figma",
+    "puppeteer",
+    "TalkToFigma"
+  ]
+}

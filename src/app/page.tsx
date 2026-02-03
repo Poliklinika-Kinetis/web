@@ -1,21 +1,36 @@
-"use client"
-
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import CallToAction from "@/components/CallToAction";
+import WhyKinetis from "@/components/WhyKinetis";
+import AboutTherapist from "@/components/AboutTherapist";
+import TherapyProcess from "@/components/TherapyProcess";
+import Services from "@/components/Services";
+import ServicesAreas from "@/components/ServicesAreas";
+import TargetAudience from "@/components/TargetAudience";
+import CommonMyths from "@/components/CommonMyths";
+import PainWarning from "@/components/PainWarning";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import "./page.css";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20">
-      <main className="flex flex-col row-start-2 items-center sm:items-start">
-        <div className="mainContainer">
-          <div className="mainText">
-            <h1 className="mainTextLarge">Poliklinika Kinetis</h1>
-            <h2 className="mainTextLarge colorPrimary">Web stranica uskoro dolazi</h2>
-            <p>
-              U izradi je nova web stranica. Uskoro s vama.
-            </p>
-          </div>
-        </div>
+    <div className="pageContainer">
+      <Header />
+      <main>
+        <Hero />
+        <CallToAction />
+        <WhyKinetis />
+        <AboutTherapist />
+        <ServicesAreas />
+        <TherapyProcess />
+        <Services />
+        <TargetAudience />
+        <CommonMyths />
+        <PainWarning />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

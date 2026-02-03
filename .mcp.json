@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "TalkToFigma": {
+      "command": "bunx",
+      "args": [
+        "cursor-talk-to-figma-mcp@latest"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "@hisma/server-puppeteer"
+      ]
+    }
+  }
+}

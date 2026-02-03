@@ -1,0 +1,97 @@
+@import "../core/custom-media.css";
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin: 108px 0;
+}
+
+@media (--mobile-tablet) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    margin: 72px 0;
+  }
+}
+
+@media (--mobile) {
+  .aboutContainer {
+    gap: 36px;
+    margin: 48px 0;
+  }
+}
+
+.aboutImage {
+  width: 100%;
+  aspect-ratio: 590 / 650;
+  background-color: #e5e5e5;
+  background-image: url("/assets/about-therapist.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+@media (--mobile-tablet) {
+  .aboutImage {
+    margin-left: -32px;
+    margin-right: -32px;
+    border-radius: 16px;
+  }
+}
+
+@media (--mobile) {
+  .aboutImage {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0;
+  }
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aboutHeading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  margin: 0;
+}
+
+@media (--mobile-tablet) {
+  .aboutHeading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (--mobile) {
+  .aboutHeading {
+    font-size: 1.8rem;
+  }
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutText p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+@media (--mobile) {
+  .aboutText p {
+    font-size: 1rem;
+  }
+}

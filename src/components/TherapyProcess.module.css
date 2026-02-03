@@ -1,0 +1,167 @@
+@import "../core/custom-media.css";
+
+.therapyContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin: 108px 0;
+}
+
+@media (--mobile-tablet) {
+  .therapyContainer {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    margin: 72px 0;
+  }
+}
+
+@media (--mobile) {
+  .therapyContainer {
+    gap: 36px;
+    margin: 48px 0;
+  }
+}
+
+.therapyImage {
+  width: 100%;
+  aspect-ratio: 565 / 605;
+  background-color: #e5e5e5;
+  background-image: url("/assets/therapy-process.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+@media (--mobile-tablet) {
+  .therapyImage {
+    margin-left: -32px;
+    margin-right: -32px;
+    border-radius: 16px;
+  }
+}
+
+@media (--mobile) {
+  .therapyImage {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0;
+  }
+}
+
+.therapyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+@media (--mobile) {
+  .therapyContent {
+    gap: 36px;
+  }
+}
+
+.therapyHeading {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  margin: 0;
+}
+
+@media (--mobile-tablet) {
+  .therapyHeading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (--mobile) {
+  .therapyHeading {
+    font-size: 2rem;
+  }
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (--mobile) {
+  .stepsList {
+    gap: 32px;
+  }
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (--mobile) {
+  .step {
+    gap: 16px;
+  }
+}
+
+.stepNumber {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #BEAF89;
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  flex-shrink: 0;
+  margin-top: -4px;
+}
+
+@media (--mobile) {
+  .stepNumber {
+    font-size: 2rem;
+  }
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #BEAF89;
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  margin: 0;
+}
+
+@media (--mobile-tablet) {
+  .stepTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (--mobile) {
+  .stepTitle {
+    font-size: 1.3rem;
+  }
+}
+
+.stepDescription {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-dark);
+  margin: 0;
+  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
+}
+
+@media (--mobile) {
+  .stepDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

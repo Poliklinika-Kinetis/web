@@ -1,0 +1,154 @@
+@import "../core/custom-media.css";
+
+.targetContainer {
+  margin: 108px 0;
+}
+
+@media (--mobile-tablet) {
+  .targetContainer {
+    margin: 72px 0;
+  }
+}
+
+@media (--mobile) {
+  .targetContainer {
+    margin: 48px 0;
+  }
+}
+
+.mainHeading {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-text-dark);
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  margin-bottom: 64px;
+}
+
+@media (--mobile-tablet) {
+  .mainHeading {
+    font-size: 2.5rem;
+    margin-bottom: 48px;
+  }
+}
+
+@media (--mobile) {
+  .mainHeading {
+    font-size: 2rem;
+    margin-bottom: 36px;
+  }
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+@media (--mobile-tablet) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (--mobile) {
+  .contentGrid {
+    gap: 36px;
+  }
+}
+
+.targetImage {
+  width: 100%;
+  aspect-ratio: 590 / 630;
+  background-color: #e5e5e5;
+  background-image: url("/assets/who-are-customers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+@media (--mobile-tablet) {
+  .targetImage {
+    margin-left: -32px;
+    margin-right: -32px;
+    border-radius: 16px;
+  }
+}
+
+@media (--mobile) {
+  .targetImage {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0;
+  }
+}
+
+.targetContent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (--mobile) {
+  .targetContent {
+    gap: 24px;
+  }
+}
+
+.contentHeading {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #BEAF89;
+  font-family: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  margin: 0;
+}
+
+@media (--mobile-tablet) {
+  .contentHeading {
+    font-size: 1.8rem;
+  }
+}
+
+@media (--mobile) {
+  .contentHeading {
+    font-size: 1.5rem;
+  }
+}
+
+.targetList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.targetList li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-dark);
+  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
+  padding-left: 24px;
+  position: relative;
+}
+
+.targetList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #BEAF89;
+  font-size: 1.2rem;
+}
+
+@media (--mobile) {
+  .targetList li {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+}

@@ -1,46 +1,11 @@
 @import "../core/custom-media.css";
 
-.mainContainer {
-  text-align: center;
+.pageContainer {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 36px;
 }
 
-.mainText {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  font-size: 16px;
-}
-
-.mainTextLarge {
-  font-size: 40px;
-  line-height: 1;
-}
-
-@media (--desktop) {
-  .mainTextLarge {
-    font-size: 60px;
-  }
-}
-
-@media (--tablet) {
-  .mainTextLarge {
-    font-size: 54px;
-  }
-}
-
-@media (--mobile-small) {
-  .mainTextLarge {
-    font-size: 32px;
-  }
-}
-
-.colorPrimary {
-  color: var(--color-primary);
-}
-
-.colorSecondary {
-  color: var(--color-secondary);
+main {
+  flex: 1;
 }
