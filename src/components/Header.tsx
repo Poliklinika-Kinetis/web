@@ -21,7 +21,7 @@ export default function Header() {
         <div className={styles.socialButtons}>
           <a
             className={styles.socialButton}
-            href="mailto:info@kinetis.hr"
+            href="mailto:kinetisfizikalna@gmail.com"
             aria-label="Email"
           >
             <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ export default function Header() {
 
           <a
             className={styles.socialButton}
-            href="https://wa.me/+385123456789"
+            href="https://wa.me/385958189160"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"

@@ -14,7 +14,7 @@ export default function Hero() {
         </div>
 
         <div className={styles.heroContent}>
-          <h1 className={styles.heroHeading}>KINETIS - Korak naprijed.</h1>
+          <h1 className={styles.heroHeading}>KINETIS - Korak naprijed</h1>
 
           <div className={styles.heroText}>
             <p className="paragraph-hero">
