@@ -17,11 +17,11 @@ export default function Hero() {
           <h1 className={styles.heroHeading}>KINETIS - Korak naprijed.</h1>
 
           <div className={styles.heroText}>
-            <p>
+            <p className="paragraph-hero">
               Individualan pristup, jasna dijagnostika i terapija bez “šablona”. 
               <br/>Cilj nije “odrađivanje terapije”, nego stvaran oporavak.
             </p>
-            <p>U Kinetisu terapija započinje razumijevanjem problema. Svaki pacijent prolazi klinički pregled na temelju kojeg se donosi odluka što ima smisla raditi, a što ne.</p>
+            <p className="paragraph-hero">U Kinetisu terapija započinje razumijevanjem problema. Svaki pacijent prolazi klinički pregled na temelju kojeg se donosi odluka što ima smisla raditi, a što ne.</p>
           </div>
         </div>
       </div>

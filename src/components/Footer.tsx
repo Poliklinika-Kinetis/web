@@ -10,9 +10,9 @@ export default function Footer() {
         </div>
 
         <div className={styles.info}>
-          <p>Kinetis d.o.o.</p>
-          <p>Ružmarinka 23</p>
-          <p>10000 Zagreb</p>
+          <p className="paragraph-footer">Kinetis d.o.o.</p>
+          <p className="paragraph-footer">Ružmarinka 23</p>
+          <p className="paragraph-footer">10000 Zagreb</p>
         </div>
       </div>
     </footer>

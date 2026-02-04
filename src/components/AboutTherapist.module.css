@@ -64,16 +64,3 @@
   flex-direction: column;
   gap: 20px;
 }
-
-.aboutText p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--color-primary);
-  margin: 0;
-}
-
-@media (--mobile) {
-  .aboutText p {
-    font-size: 1rem;
-  }
-}

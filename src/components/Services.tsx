@@ -38,7 +38,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className={styles.serviceCard}>
               <h4 className={styles.serviceTitle}>{service.title}</h4>
-              <p className={styles.serviceDescription}>{service.description}</p>
+              <p className="paragraph-body">{service.description}</p>
             </div>
           ))}
         </div>

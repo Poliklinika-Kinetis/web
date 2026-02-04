@@ -38,7 +38,7 @@ export default function WhyKinetis() {
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <h4 className={styles.featureTitle}>{feature.title}</h4>
-              <p className={styles.featureDescription}>{feature.description}</p>
+              <p className="paragraph-body">{feature.description}</p>
             </div>
           ))}
         </div>

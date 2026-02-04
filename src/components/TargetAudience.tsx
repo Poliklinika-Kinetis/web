@@ -16,16 +16,16 @@ export default function TargetAudience() {
             {/* Target audience image */}
           </div>
 
-          <div className={styles.targetContent}>
+          <div className={`${styles.targetContent} content-block-right`}>
             <h3 className={styles.contentHeading}>
-              Svima koji žele jasno razumjeti svoj problem i dobiti terapiju koja ima svrhu.
+              Svima koji žele jasno razumjeti svoj problem i dobiti terapiju koja ima svrhu
             </h3>
 
             <ul className={styles.targetList}>
-              <li>pacijentima s bolovima u kralježnici i zglobovima</li>
-              <li>osobama nakon ozljeda i / ili operacija</li>
-              <li>pacijentima s dugotrajnim ili ponavljajućim bolovima</li>
-              <li>svima koji su doživjeli loša iskustva kroz neučinkovite terapije</li>
+              <li className="paragraph-large">pacijentima s bolovima u kralježnici i zglobovima</li>
+              <li className="paragraph-large">osobama nakon ozljeda i / ili operacija</li>
+              <li className="paragraph-large">pacijentima s dugotrajnim ili ponavljajućim bolovima</li>
+              <li className="paragraph-large">svima koji su doživjeli loša iskustva kroz neučinkovite terapije</li>
             </ul>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function PainWarning() {
 
         <div className={styles.content}>
           <h2 className={styles.heading}>Ako bol traje, nemojte čekati.</h2>
-          <p className={styles.text}>
+          <p className="paragraph-emphasis">
             Bol koja traje dulje od dva do tri tjedna rijetko prolazi sama od sebe.
             <br />
             Konzultacije su besplatne i ne obvezuju vas na nastavak terapije.

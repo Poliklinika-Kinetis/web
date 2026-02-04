@@ -53,25 +53,3 @@
 .heading {
   margin: 0;
 }
-
-.text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--color-primary);
-  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
-  margin: 0;
-  max-width: 800px;
-}
-
-@media (--mobile-tablet) {
-  .text {
-    font-size: 1.05rem;
-  }
-}
-
-@media (--mobile) {
-  .text {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}

@@ -84,17 +84,3 @@
 .mythTitle {
   margin: 0;
 }
-
-.mythDescription {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--color-primary);
-  margin: 0;
-  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
-}
-
-@media (--mobile) {
-  .mythDescription {
-    font-size: 0.95rem;
-  }
-}

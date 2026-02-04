@@ -115,18 +115,3 @@
 .stepTitle {
   margin: 0;
 }
-
-.stepDescription {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--color-primary);
-  margin: 0;
-  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
-}
-
-@media (--mobile) {
-  .stepDescription {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}

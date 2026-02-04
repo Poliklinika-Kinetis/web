@@ -71,17 +71,3 @@
   gap: 4px;
   text-align: center;
 }
-
-.info p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--color-white);
-  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
-  margin: 0;
-}
-
-@media (--mobile) {
-  .info p {
-    font-size: 0.95rem;
-  }
-}

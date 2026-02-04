@@ -75,17 +75,3 @@
 .serviceTitle {
   margin: 0 0 16px 0;
 }
-
-.serviceDescription {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: var(--color-primary);
-  margin: 0;
-  font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
-}
-
-@media (--mobile) {
-  .serviceDescription {
-    font-size: 0.95rem;
-  }
-}

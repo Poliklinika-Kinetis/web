@@ -16,24 +16,24 @@ export default function Contact() {
             {/* Contact image */}
           </div>
 
-          <div className={styles.contactContent}>
+          <div className={`${styles.contactContent} content-block-right`}>
             <div className={styles.section}>
               <h3 className={styles.sectionHeading}>Gdje smo?</h3>
               <div className={styles.info}>
-                <p>Kinetis d.o.o.</p>
-                <p>Ružmarinka 23, 10000 Zagreb (Prizemlje, istočni ulaz)</p>
-                <p>Parking: 2. zona</p>
+                <p className="paragraph-large">Kinetis d.o.o.</p>
+                <p className="paragraph-large">Ružmarinka 23, 10000 Zagreb (Prizemlje, istočni ulaz)</p>
+                <p className="paragraph-large">Parking: 2. zona</p>
               </div>
             </div>
 
             <div className={styles.section}>
               <h3 className={styles.sectionHeadingAccent}>Naručivanje</h3>
               <ul className={styles.contactList}>
-                <li>telefon</li>
-                <li>e-mail</li>
-                <li>whats upp</li>
+                <li className="paragraph-large">telefon</li>
+                <li className="paragraph-large">e-mail</li>
+                <li className="paragraph-large">whats upp</li>
               </ul>
-              <p className={styles.note}>
+              <p className="paragraph-body">
                 <em>Napomena: Bez liste čekanja, termin je najčešće moguće dobiti unutar nekoliko radnih dana.</em>
               </p>
             </div>

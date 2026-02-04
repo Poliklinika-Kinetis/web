@@ -26,7 +26,7 @@ export default function CommonMyths() {
           {myths.map((myth, index) => (
             <div key={index} className={styles.mythCard}>
               <h4 className={styles.mythTitle}>{myth.title}</h4>
-              <p className={styles.mythDescription}>{myth.description}</p>
+              <p className="paragraph-body">{myth.description}</p>
             </div>
           ))}
         </div>
