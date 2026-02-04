@@ -16,7 +16,7 @@
 
 @media (--mobile) {
   .header {
-    padding: 16px 24px;
+    padding: 16px 32px;
   }
 }
 
@@ -30,6 +30,13 @@
   padding: 0 48px;
 }
 
+@media (--mobile) {
+  .headerContent {
+    height: auto;
+    padding: 0;
+  }
+}
+
 .logoContainer {
   display: flex;
   align-items: center;
@@ -39,6 +46,13 @@
 .logo {
   display: flex;
   align-items: center;
+}
+
+@media (--mobile) {
+  .logo svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .logoImage {
@@ -62,7 +76,7 @@
 
 @media (--mobile) {
   .socialButtons {
-    gap: 16px;
+    gap: 24px;
   }
 }
 

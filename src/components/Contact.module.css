@@ -66,22 +66,6 @@
   border-radius: 16px;
 }
 
-@media (--mobile-tablet) {
-  .contactImage {
-    margin-left: -32px;
-    margin-right: -32px;
-    border-radius: 16px;
-  }
-}
-
-@media (--mobile) {
-  .contactImage {
-    margin-left: -24px;
-    margin-right: -24px;
-    border-radius: 0;
-  }
-}
-
 .contactContent {
   display: flex;
   flex-direction: column;

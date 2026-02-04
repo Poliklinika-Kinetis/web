@@ -35,9 +35,6 @@
 
 @media (--mobile-tablet) {
   .ctaContent {
-    margin-left: -32px;
-    margin-right: -32px;
-    border-radius: 16px;
     padding: 48px 32px;
     gap: 36px;
   }
@@ -45,9 +42,6 @@
 
 @media (--mobile) {
   .ctaContent {
-    margin-left: -24px;
-    margin-right: -24px;
-    border-radius: 0;
     padding: 48px 24px;
     gap: 32px;
   }
@@ -82,8 +76,12 @@
 }
 
 @media (--mobile) {
+  .ctaHeading {
+    text-align: center;
+  }
+
   .ctaButton {
-    padding: 14px 36px;
-    font-size: 0.9rem;
+    padding: 12px 28px;
+    font-size: 0.875rem;
   }
 }

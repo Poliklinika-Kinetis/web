@@ -26,18 +26,6 @@
 
 @media (--mobile-tablet) {
   .heroImage {
-    margin-left: -32px;
-    margin-right: -32px;
-    border-radius: 16px;
-    margin-bottom: 48px;
-  }
-}
-
-@media (--mobile) {
-  .heroImage {
-    margin-left: -24px;
-    margin-right: -24px;
-    border-radius: 0;
     margin-bottom: 48px;
   }
 }

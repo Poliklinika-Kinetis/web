@@ -33,22 +33,6 @@
   border-radius: 16px;
 }
 
-@media (--mobile-tablet) {
-  .therapyImage {
-    margin-left: -32px;
-    margin-right: -32px;
-    border-radius: 16px;
-  }
-}
-
-@media (--mobile) {
-  .therapyImage {
-    margin-left: -24px;
-    margin-right: -24px;
-    border-radius: 0;
-  }
-}
-
 .therapyContent {
   display: flex;
   flex-direction: column;

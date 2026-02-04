@@ -48,7 +48,7 @@ h1 {
 
 @media (--mobile) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -224,5 +224,14 @@ p {
 @media (--mobile-tablet) {
   .content-block-right {
     padding-right: 0;
+  }
+}
+
+/* Center images on mobile */
+@media (--mobile) {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

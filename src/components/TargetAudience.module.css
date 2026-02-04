@@ -63,22 +63,6 @@
   border-radius: 16px;
 }
 
-@media (--mobile-tablet) {
-  .targetImage {
-    margin-left: -32px;
-    margin-right: -32px;
-    border-radius: 16px;
-  }
-}
-
-@media (--mobile) {
-  .targetImage {
-    margin-left: -24px;
-    margin-right: -24px;
-    border-radius: 0;
-  }
-}
-
 .targetContent {
   display: flex;
   flex-direction: column;

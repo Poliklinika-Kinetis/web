@@ -12,3 +12,6 @@ Accent: #F4EFE3
 Fonts:
 Source Sans 3 (https://fonts.google.com/specimen/Source+Sans+3)
 Playfair Display (https://fonts.google.com/specimen/Playfair+Display)
+
+Sizes:
+- all sizings (padding, margins) should be in the increments of 4px
