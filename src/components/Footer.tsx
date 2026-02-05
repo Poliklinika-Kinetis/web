@@ -10,9 +10,12 @@ export default function Footer() {
         </div>
 
         <div className={styles.info}>
-          <p className="paragraph-footer">Kinetis d.o.o.</p>
-          <p className="paragraph-footer">Ružmarinka 23</p>
-          <p className="paragraph-footer">10000 Zagreb</p>
+          <p className="paragraph-footer">Poliklinika Kinetis d.o.o.</p>
+          <p className="paragraph-footer">Ružmarinka 23, 10000 Zagreb</p>
+          <p className="paragraph-footer">Društvo je upisano u sudski registar Trgovačkog suda u Zagrebu, pod MBS 081620667</p>
+          <p className="paragraph-footer">Temeljni kapital društva iznosi:</p>
+          <p className="paragraph-footer">Direktor: Stjepan Marinčević</p>
+          <p className="paragraph-footer">Kontakt e-mail: kinetisfizikalna@gmail.com</p>
         </div>
       </div>
     </footer>
