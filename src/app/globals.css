@@ -147,7 +147,7 @@ a {
 p {
   font-family: var(--font-source-sans), system-ui, -apple-system, sans-serif;
   font-weight: 300;
-  color: var(--color-primary);
+  color: var(--color-black);
   margin: 0;
 }
 

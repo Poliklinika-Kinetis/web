@@ -28,8 +28,17 @@ function processCaption(filename: string): string {
   // Remove file extensions
   let caption = filename.replace(/\.jpg\.jpg$|\.jpg$/gi, '');
 
+  // Remove markers like (1), (2) etc.
+  caption = caption.replace(/\(\d+\)/g, '');
+
+  // Remove trailing numbers (e.g., " 1" at end)
+  caption = caption.replace(/\s+\d+$/, '');
+
   // Replace underscores and hyphens with spaces
   caption = caption.replace(/[_-]/g, ' ');
+
+  // Clean up multiple spaces and trim
+  caption = caption.replace(/\s+/g, ' ').trim();
 
   // Capitalize first letter
   caption = caption.charAt(0).toUpperCase() + caption.slice(1);
