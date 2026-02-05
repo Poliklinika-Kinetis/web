@@ -165,7 +165,7 @@
 /* Navigation buttons */
 .sliderNav {
   position: absolute;
-  top: 50%;
+  top: calc(48px + 200px);
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -220,6 +220,7 @@
   }
 
   .sliderNav {
+    top: calc(32px + 150px);
     width: 36px;
     height: 36px;
     font-size: 24px;

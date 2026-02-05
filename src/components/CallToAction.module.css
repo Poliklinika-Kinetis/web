@@ -15,6 +15,7 @@
 @media (--mobile) {
   .ctaContainer {
     margin: 48px 0;
+    background-position: -520px;
   }
 }
 

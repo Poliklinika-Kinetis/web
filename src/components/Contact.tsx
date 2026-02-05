@@ -29,9 +29,9 @@ export default function Contact() {
             <div className={styles.section}>
               <h3 className={styles.sectionHeadingAccent}>Naručivanje</h3>
               <ul className={styles.contactList}>
-                <li className="paragraph-large">telefon</li>
-                <li className="paragraph-large">e-mail</li>
-                <li className="paragraph-large">whats upp</li>
+                <li className="paragraph-large">telefon: <a href="tel:+385958189160">095 818 9160</a></li>
+                <li className="paragraph-large">e-mail: <a href="mailto:kinetisfizikalna@gmail.com">kinetisfizikalna@gmail.com</a></li>
+                <li className="paragraph-large">WhatsApp: <a href="https://wa.me/385958189160" target="_blank" rel="noopener noreferrer">+385 95 818 9160</a></li>
               </ul>
               <p className="paragraph-body">
                 <em>Napomena: Bez liste čekanja, termin je najčešće moguće dobiti unutar nekoliko radnih dana.</em>
