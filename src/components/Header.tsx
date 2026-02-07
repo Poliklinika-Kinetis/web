@@ -31,7 +31,7 @@ export default function Header() {
 
           <a
             className={styles.socialButton}
-            href="https://wa.me/385958189160"
+            href="https://wa.me/+385958189160"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
