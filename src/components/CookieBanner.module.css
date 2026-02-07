@@ -1,0 +1,67 @@
+@import "../core/custom-media.css";
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16px 32px;
+  background: #405144;
+  border-top: 1px solid #BEAF89;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media (--mobile) {
+  .banner {
+    padding: 20px 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+.text {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #F4EFE3;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.declineButton,
+.acceptButton {
+  padding: 4px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.declineButton {
+  background: transparent;
+  color: #F4EFE3;
+  border: 1px solid #F4EFE3;
+}
+
+.acceptButton {
+  background: #BEAF89;
+  color: #405144;
+  font-weight: 500;
+}

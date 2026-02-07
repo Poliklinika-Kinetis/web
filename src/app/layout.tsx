@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Playfair_Display } from "next/font/google";
-import Script from "next/script";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -42,19 +42,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </head>
       <body className="antialiased">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JFH1V8XF05"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JFH1V8XF05');
-          `}
-        </Script>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
