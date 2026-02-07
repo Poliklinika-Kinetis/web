@@ -256,7 +256,7 @@ const galleryImages: GalleryImage[] = [
   "suvremena terapijska oprema omogućuje cjelovit i individualno prilagođen rehabilitacijski pristup.jpg",
   "terapijske vježbe s elastičnom trakom vode se pod stručnim nadzorom terapeuta.jpg",
 ].map(filename => ({
-  src: assetPath(`/gallery/${filename}`),
+  src: assetPath(`/gallery/${encodeURIComponent(filename)}`),
   caption: processCaption(filename),
 }));
 

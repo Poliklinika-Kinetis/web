@@ -6,6 +6,10 @@
   padding: 80px 48px;
 }
 
+.footer a {
+  color: var(--color-accent);
+}
+
 @media (--mobile-tablet) {
   .footer {
     padding: 64px 32px;
