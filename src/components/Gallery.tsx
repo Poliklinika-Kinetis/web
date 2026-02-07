@@ -23,28 +23,6 @@ interface SliderRef {
   slickPrev: () => void;
 }
 
-// Process filename to create a readable caption
-function processCaption(filename: string): string {
-  // Remove file extensions
-  let caption = filename.replace(/\.jpg\.jpg$|\.jpg$/gi, '');
-
-  // Remove markers like (1), (2) etc.
-  caption = caption.replace(/\(\d+\)/g, '');
-
-  // Remove trailing numbers (e.g., " 1" at end)
-  caption = caption.replace(/\s+\d+$/, '');
-
-  // Replace underscores and hyphens with spaces
-  caption = caption.replace(/[_-]/g, ' ');
-
-  // Clean up multiple spaces and trim
-  caption = caption.replace(/\s+/g, ' ').trim();
-
-  // Capitalize first letter
-  caption = caption.charAt(0).toUpperCase() + caption.slice(1);
-
-  return caption;
-}
 
 export default function Gallery({ images }: GalleryProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -227,37 +205,38 @@ export default function Gallery({ images }: GalleryProps) {
   );
 }
 
-// Gallery images
-const galleryImages: GalleryImage[] = [
-  "Funkcionalni trening snage pod stručnim nadzorom terapeuta.jpg",
-  "Kinetec uređaj za pasivno razgibavanje zgloba koljena.jpg.jpg",
-  "Kinetec uređaj za pasivno razgibavanje zglobova(1).jpg",
-  "Kinetec uređaj za pasivno razgibavanje zglobova(2).jpg",
-  "Kinetec uređaj za pasivno razgibavanje zglobova.jpg",
-  "Kombinirani polivalentni uređaj Enraf Nonius omogućuje istodobnu primjenu utrazvuka i elektroterapije (za ciljano i učinkovito liječenje) 1.jpg",
-  "Kombinirani polivalentni uređaj Enraf Nonius omogućuje istodobnu primjenu utrazvuka i elektroterapije (za ciljano i učinkovito liječenje) 1.jpg.jpg",
-  "LPG M6 uređaj s integriranom laserskom terapijom za tretman mekih tkiva.jpg",
-  "Manualna terapija usmjerena na poboljšanje pokretljivosti i smanjenje napetosti(1).jpg",
-  "Manualna terapija usmjerena na poboljšanje pokretljivosti i smanjenje napetosti.jpg",
-  "Manualna terapije kralježnice u sklopu individualno prilagođenog rehabilitacijskog tretmana.jpg",
-  "Pasivna TECAR izolirana aktivna elektroda i suprotna neaktivna elektroda s kontaktnim gelom služi za zatvaranje strujnog kruga tijekom terapije(1).jpg",
-  "Pasivna TECAR izolirana aktivna elektroda i suprotna neaktivna elektroda s kontaktnim gelom služi za zatvaranje strujnog kruga tijekom terapije.jpg",
-  "Rezistivni TECAR aplikator (RET) u primjeni za djelovanje na dublje tkivne strukture.jpg",
-  "TECAR terapija - kapacitativni TECAR aplikator djeluje na površna meka tkiva pomoću radiofrekventne struje .jpg",
-  "TECAR uređaj proizvođača Globus omogućuje provođenje TECAR terapije uz potpunu kontrolu terapijskih parametara.jpg",
-  "manualna terapije kralježnice u sklopu individualno prilagođenog rehabilitacijskog tretmana(1).jpg",
-  "procjena stanja i razgovor s pacijentom kao dio individualnog terapijskog pristupa.jpg",
-  "prostor za rehabilitacijske vježbe s ljestvama i elastičnim trakama za trening snage i mobilnosti.jpg",
-  "prostor za rehabilitaciju i kondicijski trening opremljen je spravama za snagu, stabilnost i funkcionalne vjezbe.jpg",
-  "prostor za terapijske vježbe i funkcionalni trening opremljen je girjama različitih težina za funkcionalni trening i rehabilitaciju.jpg",
-  "prostor_utezi1.jpg",
-  "rehabilitacijske vježbe usmjerene na povrat snage i kontrole pokreta.jpg",
-  "suradnja pacijenta i terapeuta ključ je uspješne rehabilitacije.jpg",
-  "suvremena terapijska oprema omogućuje cjelovit i individualno prilagođen rehabilitacijski pristup.jpg",
-  "terapijske vježbe s elastičnom trakom vode se pod stručnim nadzorom terapeuta.jpg",
-].map(filename => ({
-  src: assetPath(`/gallery/${encodeURIComponent(filename)}`),
-  caption: processCaption(filename),
+const galleryCaptions = [
+  "Funkcionalni trening snage pod stručnim nadzorom terapeuta",
+  "Kinetec uređaj za pasivno razgibavanje zgloba koljena",
+  "Kinetec uređaj za pasivno razgibavanje zglobova",
+  "Kinetec uređaj za pasivno razgibavanje zglobova",
+  "Kinetec uređaj za pasivno razgibavanje zglobova",
+  "Kombinirani polivalentni uređaj Enraf Nonius omogućuje istodobnu primjenu ultrazvuka i elektroterapije za ciljano i učinkovito liječenje",
+  "Kombinirani polivalentni uređaj Enraf Nonius omogućuje istodobnu primjenu ultrazvuka i elektroterapije za ciljano i učinkovito liječenje",
+  "LPG M6 uređaj s integriranom laserskom terapijom za tretman mekih tkiva",
+  "Manualna terapija usmjerena na poboljšanje pokretljivosti i smanjenje napetosti",
+  "Manualna terapija usmjerena na poboljšanje pokretljivosti i smanjenje napetosti",
+  "Manualna terapija kralježnice u sklopu individualno prilagođenog rehabilitacijskog tretmana",
+  "Pasivna TECAR izolirana aktivna elektroda i suprotna neaktivna elektroda s kontaktnim gelom služi za zatvaranje strujnog kruga tijekom terapije",
+  "Pasivna TECAR izolirana aktivna elektroda i suprotna neaktivna elektroda s kontaktnim gelom služi za zatvaranje strujnog kruga tijekom terapije",
+  "Rezistivni TECAR aplikator (RET) u primjeni za djelovanje na dublje tkivne strukture",
+  "TECAR terapija - kapacitativni TECAR aplikator djeluje na površna meka tkiva pomoću radiofrekventne struje",
+  "TECAR uređaj proizvođača Globus omogućuje provođenje TECAR terapije uz potpunu kontrolu terapijskih parametara",
+  "Manualna terapija kralježnice u sklopu individualno prilagođenog rehabilitacijskog tretmana",
+  "Procjena stanja i razgovor s pacijentom kao dio individualnog terapijskog pristupa",
+  "Prostor za rehabilitacijske vježbe s ljestvama i elastičnim trakama za trening snage i mobilnosti",
+  "Prostor za rehabilitaciju i kondicijski trening opremljen je spravama za snagu, stabilnost i funkcionalne vježbe",
+  "Prostor za terapijske vježbe i funkcionalni trening opremljen je girjama različitih težina za funkcionalni trening i rehabilitaciju",
+  "Prostor s utezima",
+  "Rehabilitacijske vježbe usmjerene na povrat snage i kontrole pokreta",
+  "Suradnja pacijenta i terapeuta ključ je uspješne rehabilitacije",
+  "Suvremena terapijska oprema omogućuje cjelovit i individualno prilagođen rehabilitacijski pristup",
+  "Terapijske vježbe s elastičnom trakom vode se pod stručnim nadzorom terapeuta",
+];
+
+const galleryImages: GalleryImage[] = galleryCaptions.map((caption, i) => ({
+  src: assetPath(`/gallery/gallery-${i + 1}.jpg`),
+  caption,
 }));
 
 export { galleryImages };
