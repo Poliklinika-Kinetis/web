@@ -139,8 +139,13 @@ a {
   }
 }
 
-* {
+*:focus {
   outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
 }
 
 /* Global paragraph utility classes */

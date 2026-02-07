@@ -10,11 +10,11 @@ export default function CallToAction() {
         style={{ backgroundImage: `url(${assetPath("/images/call-to-action.png")})` }}
       >
         <div className={styles.ctaContent}>
-          <h3 className={styles.ctaHeading}>
+          <h2 className={styles.ctaHeading}>
             Bez paketa terapija.<br />
             Bez nepotrebnih dolazaka.<br />
             Bez uljepšavanja stanja.
-          </h3>
+          </h2>
 
           <a href={assetPath('/kinetis-cjenik.pdf')} className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
             POGLEDAJ NAŠ CJENIK
