@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
   margin: 108px 0;
 }
 
@@ -25,7 +25,7 @@
 
 .therapyImage {
   width: 100%;
-  aspect-ratio: 565 / 605;
+  aspect-ratio: 6 / 7;
   background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
@@ -37,6 +37,13 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  padding-top: 48px;
+}
+
+@media (--mobile-tablet) {
+  .therapyContent {
+    padding-top: 0;
+  }
 }
 
 @media (--mobile) {

@@ -58,7 +58,7 @@
 
 .contactImage {
   width: 100%;
-  aspect-ratio: 580 / 590;
+  aspect-ratio: 6 / 7;
   background-color: var(--color-accent);
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +70,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-top: 48px;
+}
+
+@media (--mobile-tablet) {
+  .contactContent {
+    padding-top: 0;
+  }
 }
 
 @media (--mobile) {
