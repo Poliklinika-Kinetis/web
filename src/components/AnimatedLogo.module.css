@@ -1,0 +1,19 @@
+.lowerLeg {
+  transform-origin: 480px 500px;
+  animation: kneeBend 3s ease-in-out infinite;
+}
+
+@keyframes kneeBend {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lowerLeg {
+    animation: none;
+  }
+}
