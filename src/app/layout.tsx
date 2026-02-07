@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://poliklinika-kinetis.hr"),
-  title: "Poliklinika Kinetis",
+  title: "Poliklinika Kinetis – Fizikalna terapija i rehabilitacija",
   description: "Poliklinika Kinetis – fizikalna terapija i rehabilitacija u Zagrebu. Individualan pristup, stručna dijagnostika i tretmani za brži oporavak.",
   viewport: null,
   alternates: {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Poliklinika Kinetis",
+    title: "Poliklinika Kinetis – Fizikalna terapija i rehabilitacija",
     description: "Fizikalna terapija i rehabilitacija u Zagrebu. Individualan pristup, stručna dijagnostika i tretmani za brži oporavak.",
     url: "https://poliklinika-kinetis.hr",
     siteName: "Poliklinika Kinetis",
