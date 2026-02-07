@@ -16,8 +16,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://poliklinika-kinetis.hr"),
   title: "Poliklinika Kinetis",
-  description: "Medicinska poliklinika Kinetis",
+  description: "Poliklinika Kinetis – fizikalna terapija i rehabilitacija u Zagrebu. Individualan pristup, stručna dijagnostika i tretmani za brži oporavak.",
   viewport: null,
   icons: {
     icon: [
@@ -27,6 +28,22 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Poliklinika Kinetis",
+    description: "Fizikalna terapija i rehabilitacija u Zagrebu. Individualan pristup, stručna dijagnostika i tretmani za brži oporavak.",
+    url: "https://poliklinika-kinetis.hr",
+    siteName: "Poliklinika Kinetis",
+    locale: "hr_HR",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1300,
+        height: 640,
+        alt: "Poliklinika Kinetis",
+      },
+    ],
   },
 };
 
