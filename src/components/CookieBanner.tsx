@@ -35,29 +35,32 @@ export default function CookieBanner() {
       loadGA();
     } else if (consent === null) {
       setVisible(true);
+      document.body.style.overflow = "hidden";
     }
+    return () => { document.body.style.overflow = ""; };
   }, []);
 
   function accept() {
     localStorage.setItem("cookie-consent", "accepted");
+    document.body.style.overflow = "";
     loadGA();
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem("cookie-consent", "declined");
+    document.body.style.overflow = "";
     setVisible(false);
   }
 
   if (!visible) return null;
 
   return (
-    <div className={styles.banner}>
-      <div className={styles.container}>
+    <div className={styles.overlay}>
+      <div className={styles.banner}>
         <p className={styles.text}>
           Ova stranica koristi kolačiće za analitiku.
         </p>
-
         <div className={styles.buttons}>
           <button onClick={decline} className={styles.declineButton}>
             Odbijam
