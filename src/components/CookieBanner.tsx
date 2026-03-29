@@ -12,16 +12,17 @@ function loadGA() {
   document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  }
-  gtag("js", new Date());
-  gtag("config", GA_ID);
+  // Must use `arguments` (not rest params) — gtag.js expects Arguments objects in dataLayer
+  // eslint-disable-next-line prefer-rest-params
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", GA_ID);
 }
 
 declare global {
   interface Window {
     dataLayer: unknown[];
+    gtag: Function;
   }
 }
 
