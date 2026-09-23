@@ -57,9 +57,8 @@ export default function CjenikPage() {
             <header className={styles.intro}>
               <h1 className={styles.title}>Cjenik usluga</h1>
               <p className="paragraph-large">
-                Cjenik vrijedi od {formatDatum(cjenik.vrijediOd)} Uz svaku cijenu navedena je i cijena
-                koja je vrijedila na dan {referentniDatum}, sukladno Odluci o isticanju dodatne cijene
-                (NN 101/2026).
+                Uz svaku cijenu navedena je i cijena koja je vrijedila na dan {referentniDatum},
+                sukladno Odluci o isticanju dodatne cijene (NN 101/2026).
               </p>
             </header>
 
@@ -152,8 +151,7 @@ export default function CjenikPage() {
                   </a>
                   <p className={styles.fileMeta}>
                     Verzija {String(aktualnaVerzija.brojPohrane).padStart(3, "0")}, objavljena{" "}
-                    {formatDatumVrijeme(aktualnaVerzija.objavljeno)}, vrijedi od{" "}
-                    {formatDatum(aktualnaVerzija.vrijediOd)}{" "}
+                    {formatDatumVrijeme(aktualnaVerzija.objavljeno)}{" "}
                     <a href={assetPath(`${CJENIK_DIR}/${aktualnaVerzija.datoteka}`)} className={styles.fileLink}>
                       Trajna poveznica na ovu verziju
                     </a>
@@ -175,7 +173,7 @@ export default function CjenikPage() {
                           Verzija {String(v.brojPohrane).padStart(3, "0")} (CSV)
                         </a>
                         <span className={styles.fileMeta}>
-                          Objavljena {formatDatumVrijeme(v.objavljeno)}, vrijedila od {formatDatum(v.vrijediOd)}
+                          Objavljena {formatDatumVrijeme(v.objavljeno)}
                         </span>
                       </li>
                     ))}
