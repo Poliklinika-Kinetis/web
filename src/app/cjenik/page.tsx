@@ -153,7 +153,7 @@ export default function CjenikPage() {
                   <p className={styles.fileMeta}>
                     Verzija {String(aktualnaVerzija.brojPohrane).padStart(3, "0")}, objavljena{" "}
                     {formatDatumVrijeme(aktualnaVerzija.objavljeno)}, vrijedi od{" "}
-                    {formatDatum(aktualnaVerzija.vrijediOd)}.{" "}
+                    {formatDatum(aktualnaVerzija.vrijediOd)}{" "}
                     <a href={assetPath(`${CJENIK_DIR}/${aktualnaVerzija.datoteka}`)} className={styles.fileLink}>
                       Trajna poveznica na ovu verziju
                     </a>
