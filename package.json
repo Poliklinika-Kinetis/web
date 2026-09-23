@@ -6,7 +6,8 @@
     "dev": "next dev -p 4280",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cjenik:publish": "node scripts/cjenik-publish.mjs"
   },
   "dependencies": {
     "next": "^16.2.1",

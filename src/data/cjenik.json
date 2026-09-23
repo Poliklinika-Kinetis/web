@@ -1,0 +1,165 @@
+{
+  "objekt": {
+    "naziv": "Poliklinika Kinetis",
+    "vrsta": "poliklinika-kinetis",
+    "adresa": "Ružmarinka 23, 10000 Zagreb",
+    "adresaZaNazivDatoteke": "ruzmarinka-23-zagreb",
+    "oznaka": "U-01"
+  },
+  "referentniDatum": "2026-09-10",
+  "vrijediOd": "2026-10-01",
+  "kategorije": [
+    {
+      "naziv": "Pregled i terapija",
+      "usluge": [
+        {
+          "id": "klinicki-fizikalni-pregled",
+          "naziv": "Klinički fizikalni pregled",
+          "opis": "Procjena početnog stanja, neurološki, neurodinamički i ortopedski testovi, anamneza, preporuka i plan za daljnju terapiju ako je potrebna.",
+          "napomena": "Bez prvog pregleda nema terapije, osim ako osoba ima nalaz specijalista. Ako je specijalist odredio samo terapiju aparatom (npr. magnet ili struju), ostale vrste terapije ne provodimo bez prvog pregleda.",
+          "cijena": 50,
+          "sidrenaCijena": 50,
+          "akcija": null
+        },
+        {
+          "id": "manualna-terapija",
+          "naziv": "Manualna terapija",
+          "opis": "Manipulacije i mobilizacije svih zglobova i mekih tkiva ovisno o potrebi.",
+          "cijena": 45,
+          "sidrenaCijena": 45,
+          "akcija": null
+        },
+        {
+          "id": "individualna-kineziterapija",
+          "naziv": "Individualna kineziterapija",
+          "opis": "Vježbe, DNS, PNF, CLT, trening snage i izdržljivosti.",
+          "cijena": 45,
+          "sidrenaCijena": 45,
+          "akcija": null
+        },
+        {
+          "id": "kinesiotape",
+          "naziv": "Kinesiotape",
+          "opis": "Primjena terapeutske trake s terapijskim biomehaničkim djelovanjem.",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "konzultacije",
+          "naziv": "Konzultacije",
+          "opis": "Besplatne uz prethodnu najavu.",
+          "cijena": 0,
+          "sidrenaCijena": 0,
+          "akcija": null
+        }
+      ]
+    },
+    {
+      "naziv": "Fizikalna terapija uz korištenje aparata",
+      "usluge": [
+        {
+          "id": "tecar-terapija",
+          "naziv": "TECAR terapija",
+          "opis": "Trajanje terapije 20–35 minuta.",
+          "cijena": 35,
+          "sidrenaCijena": 35,
+          "akcija": null
+        },
+        {
+          "id": "game-ready",
+          "naziv": "Game Ready",
+          "opis": "Cijena po segmentu.",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "elektroterapija",
+          "naziv": "Elektroterapija",
+          "opis": "Struje: TENS, IFS, DDS, mikrostruje, galvanska struja, COMPEX.",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "laser",
+          "naziv": "Laser",
+          "opis": "Robotizirajući, skenirajući, točkasti.",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "terapijski-ultrazvuk",
+          "naziv": "Terapijski ultrazvuk",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "magnetoterapija",
+          "naziv": "Magnetoterapija",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        },
+        {
+          "id": "kinetec",
+          "naziv": "Kinetec",
+          "cijena": 15,
+          "sidrenaCijena": 15,
+          "akcija": null
+        }
+      ]
+    }
+  ],
+  "protokoli": [
+    {
+      "naziv": "Protokol nakon artroskopskih zahvata koljena i rekonstrukcije ACL-a",
+      "opis": "Šivanje meniska, mikrofrakture. 30 dolazaka tijekom 3 mjeseca do završne faze, odnosno prelaska u sport. Optimalno je nastaviti fizikalnu terapiju do odrađene pliometrije.",
+      "stavke": [
+        { "uslugaId": "kinetec", "kolicina": 12 },
+        { "uslugaId": "individualna-kineziterapija", "kolicina": 30, "naziv": "Individualna kineziterapija (45 min)", "napomena": "3× tjedno ili po dogovoru, za profesionalne sportaše preporuka je svaki dan." },
+        { "uslugaId": "elektroterapija", "kolicina": 15, "naziv": "Elektrostimulacija mišića" },
+        { "uslugaId": "game-ready", "kolicina": 10 }
+      ]
+    },
+    {
+      "naziv": "Protokol nakon artroskopskih zahvata koljena",
+      "opis": "Meniscektomije, toalete.",
+      "stavke": [
+        { "uslugaId": "kinetec", "kolicina": 10 },
+        { "uslugaId": "individualna-kineziterapija", "kolicina": 15, "naziv": "Individualna kineziterapija (45 min)" },
+        { "uslugaId": "elektroterapija", "kolicina": 10, "naziv": "Elektrostimulacija mišića" },
+        { "uslugaId": "game-ready", "kolicina": 10 }
+      ]
+    },
+    {
+      "naziv": "Protokol nakon ugradnje TEP kuka",
+      "opis": "Duži protokol za aktivniju populaciju.",
+      "stavke": [
+        { "uslugaId": "individualna-kineziterapija", "kolicina": 20, "naziv": "Individualna kineziterapija (45 min)", "napomena": "Kod operacije oba kuka 25 dolazaka." },
+        { "uslugaId": "elektroterapija", "kolicina": 10, "naziv": "Elektrostimulacija mišića" },
+        { "uslugaId": "game-ready", "kolicina": 10 }
+      ]
+    },
+    {
+      "naziv": "Protokol nakon ugradnje TEP koljena",
+      "opis": "Duži protokol za aktivniju populaciju.",
+      "stavke": [
+        { "uslugaId": "kinetec", "kolicina": 10 },
+        { "uslugaId": "individualna-kineziterapija", "kolicina": 20, "naziv": "Individualna kineziterapija (45 min)", "napomena": "Kod operacije oba koljena 25 dolazaka." },
+        { "uslugaId": "elektroterapija", "kolicina": 10, "naziv": "Elektrostimulacija mišića" },
+        { "uslugaId": "game-ready", "kolicina": 10 }
+      ]
+    }
+  ],
+  "napomenaProtokoli": "Cijena i broj terapija u protokolima formirani su orijentacijski i prilagođavaju se potrebama svakog pacijenta. Naplaćuju se pojedinačne usluge prema gore navedenom cjeniku.",
+  "napomene": [
+    "Sve cijene izražene su u eurima s uključenim PDV-om.",
+    "Plaćanje se vrši nakon obavljene usluge. Jednokratno plaćanje moguće je gotovinom te svim debitnim i kreditnim karticama.",
+    "Obročno plaćanje omogućeno je karticama Maestro, Mastercard i Visa do 6 rata, sukladno uvjetima kartičnih kuća.",
+    "Poliklinika zadržava pravo izmjene cijena."
+  ]
+}

@@ -16,7 +16,7 @@ export default function CallToAction() {
             Bez uljepšavanja stanja.
           </h2>
 
-          <a href={assetPath('/kinetis-cjenik.pdf')} className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
+          <a href={assetPath('/cjenik')} className={styles.ctaButton}>
             POGLEDAJ NAŠ CJENIK
           </a>
         </div>

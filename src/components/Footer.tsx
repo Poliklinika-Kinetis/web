@@ -14,7 +14,7 @@ export default function Footer() {
           <p className="paragraph-footer">Temeljni kapital društva iznosi: 2500,00 eura</p>
           <p className="paragraph-footer">Direktor: Stjepan Marinčević</p>
           <p className="paragraph-footer">Kontakt e-mail: kinetisfizikalna@gmail.com</p>
-          <p className="paragraph-footer"><a href="/politika-privatnosti.pdf" target="_blank" rel="noopener noreferrer">Politika privatnosti</a></p>
+          <p className="paragraph-footer"><a href="/cjenik">Cjenik</a> · <a href="/politika-privatnosti.pdf" target="_blank" rel="noopener noreferrer">Politika privatnosti</a></p>
         </div>
       </div>
     </footer>

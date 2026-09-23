@@ -1,0 +1,383 @@
+@import "../../core/custom-media.css";
+
+.page {
+  margin: 64px auto 108px;
+  max-width: 960px;
+}
+
+@media (--mobile-tablet) {
+  .page {
+    margin: 48px auto 72px;
+  }
+}
+
+@media (--mobile) {
+  .page {
+    margin: 32px auto 48px;
+  }
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  text-decoration: none;
+}
+
+.intro {
+  margin-bottom: 64px;
+}
+
+@media (--mobile) {
+  .intro {
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+/* Kategorije ------------------------------------------------------------- */
+
+.category {
+  margin-bottom: 64px;
+}
+
+@media (--mobile) {
+  .category {
+    margin-bottom: 48px;
+  }
+}
+
+.categoryTitle {
+  margin-bottom: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.categoryLead {
+  margin: 16px 0 32px;
+  max-width: 720px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (--mobile) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 0;
+  }
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 640px;
+}
+
+.serviceName {
+  margin: 0;
+}
+
+.note {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+
+/* Cijene ----------------------------------------------------------------- */
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 4px;
+  min-width: 180px;
+}
+
+@media (--mobile) {
+  .prices {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.price {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.41rem;
+  line-height: 1.25;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.anchor {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 12px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Protokoli -------------------------------------------------------------- */
+
+.protocols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (--mobile-tablet) {
+  .protocols {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.protocol {
+  background: var(--color-accent);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (--mobile) {
+  .protocol {
+    padding: 32px 24px;
+  }
+}
+
+.protocolTitle {
+  margin: 0 0 12px;
+}
+
+.protocolDesc {
+  margin-bottom: 24px;
+}
+
+.protocolItems {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.protocolItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.protocolItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.protocolItemPrice {
+  white-space: nowrap;
+  color: var(--color-primary);
+}
+
+.protocolTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-secondary);
+}
+
+.protocolTotalLabel {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.18rem;
+  color: var(--color-primary);
+  padding-top: 2px;
+}
+
+.protocolTotal .prices {
+  min-width: 0;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Napomene --------------------------------------------------------------- */
+
+.notes {
+  margin-bottom: 64px;
+}
+
+@media (--mobile) {
+  .notes {
+    margin-bottom: 48px;
+  }
+}
+
+.notesTitle {
+  margin-bottom: 16px;
+}
+
+.notesList {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notesList li {
+  font-weight: 300;
+}
+
+/* Preuzimanje i arhiva --------------------------------------------------- */
+
+.download {
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (--mobile) {
+  .download {
+    padding: 32px 24px;
+  }
+}
+
+.downloadTitle {
+  margin: 0;
+}
+
+.downloadButton {
+  align-self: flex-start;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 16px 48px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-playfair), serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+@media (--mobile) {
+  .downloadButton {
+    padding: 12px 28px;
+    font-size: 0.875rem;
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+.fileMeta {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fileLink {
+  font-size: 0.9rem;
+}
+
+.archive {
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.archiveTitle {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.archiveList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.archiveItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Print ------------------------------------------------------------------ */
+
+@media print {
+  .back,
+  .download {
+    display: none;
+  }
+
+  .page {
+    margin: 0;
+    max-width: none;
+  }
+
+  .row,
+  .protocol {
+    break-inside: avoid;
+  }
+
+  .protocol {
+    box-shadow: none;
+  }
+
+  .category {
+    margin-bottom: 32px;
+  }
+}
